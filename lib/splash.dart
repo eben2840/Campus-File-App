@@ -42,7 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 'Presto Stay',
                 style: TextStyle(
                   color: Color.fromARGB(255, 19, 9, 214),
-                            
+                   fontFamily: "PlusJakartaSans",         
                   fontSize: 40,
                   fontWeight: FontWeight.w900,
                 ),

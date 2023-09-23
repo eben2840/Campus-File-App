@@ -22,6 +22,7 @@ class _NewpageState extends State<Newpage> {
     
    
   ];
+  
 
   late WebViewController controller;
   double progress = 0.0;
@@ -30,8 +31,10 @@ class _NewpageState extends State<Newpage> {
   Widget build(BuildContext context) => Scaffold(
         
         body: screens[currentIndex],
+        
         bottomNavigationBar: BottomNavigationBar(
           backgroundColor: Colors.white,
+          // unselectedItemColor: Color.fromARGB(255, 44, 43, 43),
           selectedItemColor: Color.fromARGB(255, 54, 72, 239),
           iconSize: 30,
           selectedFontSize: 10,
@@ -48,7 +51,7 @@ class _NewpageState extends State<Newpage> {
             ),
             BottomNavigationBarItem(
               icon: Icon(
-                Icons.map_rounded,
+                Icons.person_pin_circle_rounded,
               ),
               label: 'Map',
               backgroundColor: Colors.red,
@@ -63,7 +66,7 @@ class _NewpageState extends State<Newpage> {
             
             BottomNavigationBarItem(
               icon: Icon(
-                Icons.person_2_sharp,
+                Icons.person_2_rounded,
               ),
               label: 'Profile',
               backgroundColor: Colors.red,

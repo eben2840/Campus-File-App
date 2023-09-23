@@ -15,9 +15,9 @@ import 'package:flutter/widgets.dart';
 GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  await FirebaseApi().initNotifications();
+  // WidgetsFlutterBinding.ensureInitialized();
+  // await Firebase.initializeApp();
+ await FirebaseApi().backgroundNotification();
   runApp(MyApp());
 }
 

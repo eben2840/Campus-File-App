@@ -7,7 +7,8 @@ Future<void>  handleBackgroundMessage(RemoteMessage message) async{
 }
 
 
-class FirebaseApi{
+class FirebaseApi
+{
   final _firebaseMessaging = FirebaseMessaging.instance;
 
   Future<void> initNotifications() async{
